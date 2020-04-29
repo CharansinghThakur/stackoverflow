@@ -90,6 +90,7 @@ def find_optimal_lm_mod(X, y, cutoffs, test_size = .30, random_state=42, plot=Tr
         plt.legend(loc=1)
         plt.show()
 
+    #finds the best cutoffs
     best_cutoff = max(results, key=results.get)
 
     #reduce X matrix
